@@ -26,7 +26,7 @@ function App() {
     };
     const handleRemoveItem = (name) => {
         setCartItem(
-            cartItem.filter((item, i) => {
+            cartItem.filter((item) => {
                 console.log("item", item);
                 return item?.name !== name;
             })
