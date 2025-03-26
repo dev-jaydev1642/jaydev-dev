@@ -1,3 +1,4 @@
+import "./react-table-scratch.css";
 import { useState, useMemo } from "react";
 
 function ReactTableScratch() {
@@ -10,7 +11,7 @@ function ReactTableScratch() {
     ];
 
     // States
-    const [data, _] = useState(initialData);
+    const data = initialData;
     const [sortConfig, setSortConfig] = useState({
         key: null,
         direction: "asc",
